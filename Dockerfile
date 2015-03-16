@@ -14,7 +14,6 @@ ADD . /usr/src/app
 ENV RAILS_ENV preview
 RUN bundle exec rake db:create && \
     bundle exec rake db:migrate && \
-    bundle exec rake db:seed_fu && \
     bundle exec rake assets:precompile
 
 EXPOSE 80
